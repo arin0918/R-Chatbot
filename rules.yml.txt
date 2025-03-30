@@ -1,0 +1,56 @@
+version: "3.1"
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Answer product inquiries
+    steps:
+      - intent: product_inquiry
+      - action: utter_product_inquiry
+
+  - rule: Answer order status queries
+    steps:
+      - intent: order_status
+      - action: utter_order_status
+
+  - rule: Handle order cancellation
+    steps:
+      - intent: cancel_order
+      - action: utter_cancel_order
+
+  - rule: Handle technical issues
+    steps:
+      - intent: technical_issue
+      - action: utter_technical_issue
+
+  - rule: Reset password guidance
+    steps:
+      - intent: reset_password
+      - action: utter_reset_password
+
+  - rule: Update account guidance
+    steps:
+      - intent: update_account
+      - action: utter_update_account
+
+  - rule: Handle payment issues
+    steps:
+      - intent: payment_issue
+      - action: utter_payment_issue
+
+  - rule: Handle refund requests
+    steps:
+      - intent: refund_request
+      - action: utter_refund_request
+
+  - rule: Provide shipping details
+    steps:
+      - intent: shipping_details
+      - action: utter_shipping_details

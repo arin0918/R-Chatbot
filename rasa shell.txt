@@ -1,0 +1,33 @@
+D:
+
+
+
+
+
+D:\Download\venv\Scripts\activate
+cd D:\Download\my_project
+rasa run --enable-api --cors "*"
+rasa shell
+
+
+
+rasa train --data or rasa train --data D:\Download\my_project
+
+deactivate
+cd D:\Download
+cd rasa-chat,npm start in diffent cmd terminal
+npm install -g npm@latest,npm install -g npm@11.2.0
+npm -v
+D:\arbin\Documents\Git\bin
+D:\arbin\Documents\Git\cmd
+
+                                                                
+
+
+
+
+
+
+
+
+

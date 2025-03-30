@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - product_inquiry
+  - order_status
+  - cancel_order
+  - technical_issue
+  - reset_password
+  - update_account
+  - payment_issue
+  - refund_request
+  - shipping_details
+  - change_language
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_product_inquiry:
+    - text: "You can check our latest products on our website. Would you like me to provide more details about a specific product?"
+
+  utter_order_status:
+    - text: "Please provide your order ID, and I'll check the status for you."
+
+  utter_cancel_order:
+    - text: "To cancel your order, please visit your account section or provide your order ID for assistance."
+
+  utter_technical_issue:
+    - text: "I’m sorry for the inconvenience. Can you describe the issue in more detail?"
+
+  utter_reset_password:
+    - text: "You can reset your password by clicking on 'Forgot Password' on the login page."
+
+  utter_update_account:
+    - text: "To update your account, go to 'My Account' settings. If you need help, let me know!"
+
+  utter_payment_issue:
+    - text: "I'm sorry to hear that. Can you specify the issue with your payment?"
+
+  utter_refund_request:
+    - text: "To request a refund, please visit our return policy page or provide your order ID for further assistance."
+
+  utter_shipping_details:
+    - text: "Shipping typically takes 3-5 business days. You can track your shipment using the tracking ID sent to your email."
+
+  utter_default_fallback:
+    - text: "Sorry, I didn't understand that. Can you please rephrase?"
+
+  utter_ask_order_id:
+    - text: "Aapka order track karne ke liye order ID de sakte hain?"
+
+  utter_confirm_cancel:
+    - text: "Kya aap confirm karte hain ki order cancel karna chahte hain?"
+
+  utter_change_language:
+    - text: "Apni pasandida bhasha chunein: Hinglish, Marathilish, Telgulish, ya Banglish?"
+
+  utter_offer_support:
+    - text: "Lagta hai aapko baar-baar yeh samasya ho rahi hai. Kya aap kisi agent se baat karna chahenge?"

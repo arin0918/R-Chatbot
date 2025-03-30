@@ -1,0 +1,58 @@
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Default fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default_fallback
+
+- rule: Ask for order ID before providing status
+  steps:
+  - intent: order_status
+  - action: utter_ask_order_id
+  - action: utter_order_status
+
+- rule: Confirm order cancellation
+  steps:
+  - intent: cancel_order
+  - action: utter_confirm_cancel
+  - action: utter_cancel_order
+
+- rule: Change language
+  steps:
+  - intent: change_language
+  - action: utter_change_language
+
+- rule: Handle repeated complaints
+  steps:
+  - intent: technical_issue
+  - action: utter_technical_issue
+  - action: utter_offer_support
+
+responses:
+  utter_default_fallback:
+    - text: "Sorry, I didn't understand that. Can you please rephrase?"
+
+  utter_ask_order_id:
+    - text: "Aapka order track karne ke liye order ID de sakte hain?"
+
+  utter_confirm_cancel:
+    - text: "Kya aap confirm karte hain ki order cancel karna chahte hain?"
+
+  utter_change_language:
+    - text: "Apni pasandida bhasha chunein: Hinglish, Marathilish, Telgulish, ya Banglish?"
+
+  utter_offer_support:
+    - text: "Lagta hai aapko baar-baar yeh samasya ho rahi hai. Kya aap kisi agent se baat karna chahenge?"
+
+

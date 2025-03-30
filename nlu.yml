@@ -1,0 +1,107 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Namaste
+    - Salaam
+    - Kaisa ho?  # Hinglish
+    - Kashi aahes?  # Marathilish
+    - Ela unnavu?  # Telgulish
+    - Kem cho?  # Banglish
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+    - Take care
+    - Chalo milte hain  # Hinglish
+    - Nantar bhetu ya  # Marathilish
+    - Malli kaludham  # Telgulish
+    - Pore dekha hobe  # Banglish
+
+- intent: product_inquiry
+  examples: |
+    - Tell me about your products
+    - What do you sell?
+    - Show me your latest products
+    - Mujhe naye products dikhaiye  # Hinglish
+    - Mala nave products dakhav  # Marathilish
+    - Nenu kothavalani chudalani  # Telgulish
+    - Amader notun product dekhate parben?  # Banglish
+
+- intent: order_status
+  examples: |
+    - Where is my order?
+    - Can you check my order status?
+    - Order kahan tak pahucha hai?  # Hinglish
+    - Majha order kuthay pochla?  # Marathilish
+    - Naa order ekkada undi?  # Telgulish
+    - Amar order kothay?  # Banglish
+
+- intent: cancel_order
+  examples: |
+    - I want to cancel my order
+    - Can you cancel my order?
+    - Mera order cancel kar do  # Hinglish
+    - Majha order rad kara  # Marathilish
+    - Naa order cancel cheyyandi  # Telgulish
+    - Amar order cancel korun  # Banglish
+
+- intent: technical_issue
+  examples: |
+    - I have a technical problem
+    - Something is not working
+    - Kuch problem ho raha hai  # Hinglish
+    - Kahi tari problem ahe  # Marathilish
+    - Naa system lo issue undi  # Telgulish
+    - Kichu samasya hochhe  # Banglish
+
+- intent: reset_password
+  examples: |
+    - I forgot my password
+    - How do I reset my password?
+    - Password bhool gaya hoon  # Hinglish
+    - Password visarlo  # Marathilish
+    - Password marchipoyanu  # Telgulish
+    - Amar password vule gechi  # Banglish
+
+- intent: update_account
+  examples: |
+    - I want to update my account details
+    - How can I change my account information?
+    - Mera account update karna hai  # Hinglish
+    - Majha account update karaycha ahe  # Marathilish
+    - Naa account details marchali  # Telgulish
+    - Amar account update korte hobe  # Banglish
+
+- intent: payment_issue
+  examples: |
+    - My payment failed
+    - I was charged incorrectly
+    - Payment fail ho gaya  # Hinglish
+    - Majha payment jhala nahi  # Marathilish
+    - Naa payment ayit ledu  # Telgulish
+    - Amar payment fail hoyeche  # Banglish
+
+- intent: refund_request
+  examples: |
+    - I want a refund
+    - How do I request a refund?
+    - Mera paisa wapas chahiye  # Hinglish
+    - Majha paise parat hava  # Marathilish
+    - Naa dabbu back kavali  # Telgulish
+    - Amar taka ferot chai  # Banglish
+
+- intent: shipping_details
+  examples: |
+    - When will my order arrive?
+    - How long does shipping take?
+    - Mera order kab aayega?  # Hinglish
+    - Majha order kevha yeil?  # Marathilish
+    - Naa order eppudu vastundi?  # Telgulish
+    - Amar order kokhon asbe?  # Banglish

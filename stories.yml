@@ -1,0 +1,56 @@
+version: "3.1"
+stories:
+  - story: Greet and Goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Product inquiry flow
+    steps:
+      - intent: product_inquiry
+      - action: utter_product_inquiry
+
+  - story: Order status flow
+    steps:
+      - intent: order_status
+      - action: utter_ask_order_id
+      - action: utter_order_status
+
+  - story: Cancel order flow
+    steps:
+      - intent: cancel_order
+      - action: utter_confirm_cancel
+      - action: utter_cancel_order
+
+  - story: Technical issue flow
+    steps:
+      - intent: technical_issue
+      - action: utter_technical_issue
+      - action: utter_offer_support
+
+  - story: Reset password flow
+    steps:
+      - intent: reset_password
+      - action: utter_reset_password
+
+  - story: Update account flow
+    steps:
+      - intent: update_account
+      - action: utter_update_account
+
+  - story: Payment issue flow
+    steps:
+      - intent: payment_issue
+      - action: utter_payment_issue
+
+  - story: Refund request flow
+    steps:
+      - intent: refund_request
+      - action: utter_refund_request
+
+  - story: Shipping details flow
+    steps:
+      - intent: shipping_details
+      - action: utter_shipping_details
