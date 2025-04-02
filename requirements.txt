@@ -1,0 +1,1 @@
+PyAudio @ file:///D:/pyaudio_dependencies/PyAudio-0.2.11-cp37-cp37m-win_amd64.whl#sha256=920e2f17fdb798849fc595ab10991f39565cbcbf6d9edbdb437f356fecd485b0
