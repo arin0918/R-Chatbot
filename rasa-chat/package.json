@@ -9,7 +9,8 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "cross-env PORT=10000 react-scripts start",
