@@ -21,16 +21,17 @@ const App = () => {
 
       if (response.data.length > 0) {
         const botReply = response.data[0].text;
-        setMessages((prevMessages) => [
-          ...prevMessages,
-          { text: botReply, type: "bot" },
+        setMessages([
+          ...messages,
+          { text: input, type: "user" },
+          { text: botReply, type: "bot" }
         ]);
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: "Error connecting to bot", type: "bot" },
+      setMessages([
+        ...messages,
+        { text: "Error connecting to bot", type: "bot" }
       ]);
     }
   };
@@ -45,7 +46,7 @@ const App = () => {
             style={{
               ...styles.message,
               alignSelf: msg.type === "user" ? "flex-end" : "flex-start",
-              backgroundColor: msg.type === "user" ? "#4CAF50" : "#0084FF",
+              backgroundColor: msg.type === "user" ? "#4CAF50" : "#0084FF"
             }}
           >
             {msg.text}
@@ -75,16 +76,14 @@ const styles = {
     height: "400px",
     overflowY: "auto",
     padding: "10px",
-    border: "1px solid #ddd",
-    display: "flex",
-    flexDirection: "column",
+    border: "1px solid #ddd"
   },
   message: {
     padding: "10px",
     borderRadius: "10px",
     color: "white",
     margin: "5px",
-    maxWidth: "75%",
+    maxWidth: "75%"
   },
   inputContainer: { display: "flex", marginTop: "10px" },
   input: { flex: 1, padding: "10px", border: "1px solid #ddd" },
@@ -93,8 +92,8 @@ const styles = {
     backgroundColor: "#007BFF",
     color: "white",
     border: "none",
-    cursor: "pointer",
-  },
+    cursor: "pointer"
+  }
 };
 
 export default App;
