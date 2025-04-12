@@ -15,17 +15,23 @@ const App = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5005/webhooks/rest/webhook",
+        "https://similar-jillayne-ariyan09-5d8179c8.koyeb.app/webhooks/rest/webhook",
         userMessage
       );
 
       if (response.data.length > 0) {
         const botReply = response.data[0].text;
-        setMessages([...messages, { text: input, type: "user" }, { text: botReply, type: "bot" }]);
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { text: botReply, type: "bot" },
+        ]);
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      setMessages([...messages, { text: "Error connecting to bot", type: "bot" }]);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: "Error connecting to bot", type: "bot" },
+      ]);
     }
   };
 
@@ -65,11 +71,30 @@ const App = () => {
 // CSS styles
 const styles = {
   container: { width: "400px", margin: "auto", textAlign: "center" },
-  chatWindow: { height: "400px", overflowY: "auto", padding: "10px", border: "1px solid #ddd" },
-  message: { padding: "10px", borderRadius: "10px", color: "white", margin: "5px", maxWidth: "75%" },
+  chatWindow: {
+    height: "400px",
+    overflowY: "auto",
+    padding: "10px",
+    border: "1px solid #ddd",
+    display: "flex",
+    flexDirection: "column",
+  },
+  message: {
+    padding: "10px",
+    borderRadius: "10px",
+    color: "white",
+    margin: "5px",
+    maxWidth: "75%",
+  },
   inputContainer: { display: "flex", marginTop: "10px" },
   input: { flex: 1, padding: "10px", border: "1px solid #ddd" },
-  button: { padding: "10px", backgroundColor: "#007BFF", color: "white", border: "none", cursor: "pointer" },
+  button: {
+    padding: "10px",
+    backgroundColor: "#007BFF",
+    color: "white",
+    border: "none",
+    cursor: "pointer",
+  },
 };
 
 export default App;
